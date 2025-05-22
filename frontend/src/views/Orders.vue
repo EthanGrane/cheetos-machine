@@ -55,7 +55,7 @@ const deliver = async () => {
 
   <ul>
     <li v-for="order in orders" :key="order.id">
-      ID: {{ order.id }} | Precio: {{ order.price }}€ | Deliver: {{ order.delivered_at }}
+      ID: {{ order.id }} | User_ID: {{ order.user_id }} | Precio: {{ order.price }}€ | Deliver: {{ order.delivered_at }}
     </li>
   </ul>
 </template>

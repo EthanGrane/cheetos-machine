@@ -56,9 +56,9 @@ export default function useOrders() {
         }
     }
 
-    const deliverLastOrder = async (user_id: number) => {
+    const deliverLastOrder = async () => {
         try {
-            const res = await api.post('/order/deliver', { user_id });
+            const res = await api.post('/order/deliver',{});
             return res.data;
         } catch (error: any) {
             if (error.response && error.response.data && error.response.data.message) {
